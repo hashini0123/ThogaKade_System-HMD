@@ -32,7 +32,7 @@ public class OrderServiceImpl implements OrderService {
 
         try {
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/thogakade","root", "1234");
-            PreparedStatement preparedStatement = connection.prepareStatement("UPDATE orders SET orderDate=?,custID=?,WHERE OrderID=?");
+            PreparedStatement preparedStatement = connection.prepareStatement("UPDATE orders SET orderDate=?,custID=? WHERE OrderID=?");
 
             preparedStatement.setObject(1,orderDate);
             preparedStatement.setObject(2,custID);
