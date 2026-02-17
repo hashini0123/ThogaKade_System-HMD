@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="753.0" prefWidth="1142.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PlaceOrderFormController">
+   <children>
+      <Text layoutX="285.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Place Order Management">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tblPlaceOrderManagement" layoutX="30.0" layoutY="138.0" prefHeight="334.0" prefWidth="686.0">
+        <columns>
+          <TableColumn fx:id="colItemCode" prefWidth="75.0" text="Item code " />
+          <TableColumn fx:id="colDescription" prefWidth="175.199951171875" text="Description" />
+            <TableColumn fx:id="colQuantity" prefWidth="107.20001220703125" text="Quantity" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="94.39996337890625" text="Unit Price" />
+            <TableColumn fx:id="colTotal" prefWidth="96.800048828125" text="Total" />
+            <TableColumn fx:id="colDiscount" prefWidth="136.0" text="Discount" />
+        </columns>
+      </TableView>
+      <Text layoutX="840.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Details">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="914.0" layoutY="102.0" startX="-100.0" />
+      <TextField layoutX="772.0" layoutY="158.0" promptText="Customer ID" />
+      <TextField layoutX="949.0" layoutY="158.0" promptText="Name" />
+      <Line endX="258.800048828125" layoutX="854.0" layoutY="203.0" startX="-100.0" />
+      <TextField layoutX="961.0" layoutY="238.0" promptText="Item Code" />
+      <TextField layoutX="754.0" layoutY="292.0" prefHeight="26.0" prefWidth="240.0" promptText="Description" />
+      <TextField layoutX="754.0" layoutY="334.0" prefHeight="26.0" prefWidth="240.0" promptText="Unit Price" />
+      <TextField layoutX="754.0" layoutY="377.0" prefHeight="26.0" prefWidth="240.0" promptText="Quantity" />
+      <TextField layoutX="963.0" layoutY="417.0" prefHeight="26.0" prefWidth="122.0" promptText="Discount" />
+      <Button layoutX="855.0" layoutY="472.0" mnemonicParsing="false" text="Add to Cart" />
+      <Line endX="258.800048828125" layoutX="853.0" layoutY="518.0" startX="-100.0" />
+      <Text layoutX="753.0" layoutY="592.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Total  :">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <Text layoutX="932.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.0">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <Button layoutX="858.0" layoutY="633.0" mnemonicParsing="false" text="Place Order" />
+   </children>
+</AnchorPane>
