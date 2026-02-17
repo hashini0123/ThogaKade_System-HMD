@@ -27,6 +27,9 @@ public class DashBoardFormController {
     private Button txtOrderManagement;
 
     @FXML
+    private Button txtPlaceOrderManagement;
+
+    @FXML
     void btnCustomerManagementOnAction(ActionEvent event) throws IOException {
 
         Stage newStage = new Stage();
@@ -65,8 +68,6 @@ public class DashBoardFormController {
     @FXML
     void btnOrderDetailManagementOnAction(ActionEvent event) throws IOException {
 
-       // Stage newStage = new Stage();
-
         Parent rootNode = null;
 
         try {
@@ -88,8 +89,6 @@ public class DashBoardFormController {
     @FXML
     void btnOrderManagementOnAction(ActionEvent event) throws IOException {
 
-       // Stage newStage = new Stage();
-
         Parent rootNode = null;
         try {
             rootNode = FXMLLoader.load(this.getClass().getResource("/view/order_info.fxml"));
@@ -101,6 +100,26 @@ public class DashBoardFormController {
 
         stage.setScene(scene);
         stage.setTitle("Order Management");
+
+        stage.show();
+
+    }
+
+    @FXML
+    void btnPlaceOrderManagement(ActionEvent event) {
+
+        Parent rootNode = null;
+
+        try {
+            rootNode = FXMLLoader.load(getClass().getResource("/view/place_order_info.fxml"));
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        Scene scene = new Scene(rootNode);
+
+        stage.setScene(scene);
+        stage.setTitle("Place Order Management");
 
         stage.show();
 

@@ -5,7 +5,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="446.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+<AnchorPane prefHeight="569.0" prefWidth="603.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
    <children>
       <Text layoutX="214.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome YR">
          <font>
@@ -28,6 +28,11 @@
          </font>
       </Button>
       <Button fx:id="txtOrderDetailManagement" layoutX="175.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnOrderDetailManagementOnAction" prefHeight="40.0" prefWidth="246.0" text="Order Detail Management">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="txtPlaceOrderManagement" layoutX="175.0" layoutY="412.0" mnemonicParsing="false" onAction="#btnPlaceOrderManagement" prefHeight="40.0" prefWidth="246.0" text="Place Order Management">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
